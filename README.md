@@ -142,7 +142,7 @@ google.com.(имя, к которому относится запись)        
 ```
 
 
-### NAT between kali <- debian 1 <- debian 2
+### 2.NAT between kali <- debian 1 <- debian 2
 
 ```
 debian 2
