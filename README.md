@@ -410,6 +410,10 @@ table ip filter {
 ### 3.SSH
 
 ```
+настройка на debian1 и debian2
+```
+
+```
 kali to debian1
 
 ┌──(aden-skirata㉿kali)-[~]
