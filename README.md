@@ -406,3 +406,54 @@ table ip filter {
 }
    
 ```
+
+### 3.SSH
+
+```
+kali to debian1
+
+┌──(aden-skirata㉿kali)-[~]
+└─$ ssh skirata@192.168.10.2
+The authenticity of host '192.168.10.2 (192.168.10.2)' can't be established.
+ED25519 key fingerprint is: SHA256:xhuPHuLvLihY9q9p83nhty0Gw+CgJAc31769J+iY++M
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? y
+Please type 'yes', 'no' or the fingerprint: yes
+Warning: Permanently added '192.168.10.2' (ED25519) to the list of known hosts.
+skirata@192.168.10.2's password: 
+Linux debian 6.12.113+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.113-1 (2026-10-15) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+skirata@debian:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+skirata@debian:~$ whoami
+skirata
+
+debian1 to debian2
+
+skirata@debian:~$ ssh user@192.168.20.2
+The authenticity of host '192.168.20.2 (192.168.20.2)' can't be established.                                                                                                                                                        
+ED25519 key fingerprint is SHA256:3j6q5UpftGFPxBoUu1g6LB6nvnomtoPRLtQuZKgW41A.                                                                                                                                                      
+This key is not known by any other names.                                                                                                                                                                                           
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes                                                                                                                                                            
+Warning: Permanently added '192.168.20.2' (ED25519) to the list of known hosts.                                                                                                                                                     
+user@192.168.20.2's password:                                                                                                                                                                                                       
+Linux debian2 6.12.113+deb13-amd64 #1 SMP PREEMPT_DYNAMIC Debian 6.12.113-1 (2026-10-15) x86_64
+
+The programs included with the Debian GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+user@debian2:~$ pwd
+/home/user
+user@debian2:~$ whoami
+user
+
+```
